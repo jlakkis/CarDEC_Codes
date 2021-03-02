@@ -2,11 +2,12 @@
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
-reticulate::use_condaenv("cardec", required = T)
-reticulate::source_python("mnn_reticulate.py")
-
 if("Seurat" %in% rownames(installed.packages()) == F) {
   install.packages('Seurat')
+}
+
+if("reticulate" %in% rownames(installed.packages()) == F) {
+  install.packages('reticulate')
 }
 
 if("batchelor" %in% rownames(installed.packages()) == F) {
@@ -19,6 +20,9 @@ if("batchelor" %in% rownames(installed.packages()) == F) {
 if("scater" %in% rownames(installed.packages()) == F) {
   BiocManager::install("scater")
 }
+
+reticulate::use_condaenv("cardec", required = T)
+reticulate::source_python("mnn_reticulate.py")
 
 library(Seurat)
 library(batchelor)

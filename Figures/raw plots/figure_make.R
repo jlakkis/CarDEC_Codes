@@ -1,6 +1,14 @@
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 getwd()
 
+packages = c("knitr", "cowplot", "gridExtra", "png", "RANN", "ggplot2", "kableExtra", "dplyr", "vioplot", "RColorBrewer", "tidyr")
+
+for (package in packages) {
+  if(package %in% rownames(installed.packages()) == F) {
+    install.packages(package)
+  }
+}
+
 suppressPackageStartupMessages(library(knitr))
 suppressPackageStartupMessages(library(cowplot))
 suppressPackageStartupMessages(library(gridExtra))
