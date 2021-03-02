@@ -1,6 +1,6 @@
 # CarDEC Evaluations
 
-CarDEC (**C**ount **a**dapted **r**egularized **D**eep **E**mbedded **C**lustering) is a joint deep learning computational tool that is useful for analyses of single-cell RNA-seq data. CarDEC can be used to:
+CarDEC (**C**ount **a**dapted **r**egularized **D**eep **E**mbedded **C**lustering) is a joint deep learning computational tool that is useful for analyses of single-cell RNA-seq data. The CarDEC method's repository can be found [here](https://github.com/jlakkis/CarDEC).
 
 This repository is dedicated to providing the code used to perform all evaluations in the [CarDEC paper](https://www.biorxiv.org/content/10.1101/2020.09.23.310003v1). It includes code used to generate results for CarDEC, and for every competing method:
 
@@ -18,7 +18,7 @@ It is recommended the user proceeds as follows.
 2. Download the data from Box.
 3. Install all necessary packages.
 4. Run all evaluations.
-5. Run Rscripts to generate final figures.
+5. Run Rscripts to generate final plots.
 
 ## Clone this repository to your local machine
 
@@ -26,11 +26,11 @@ Clone this repository to your local machine using [the standard procedure](https
 
 ## Download the data from Box
 
-Download the [data from Box](https://upenn.box.com/s/p9jkwsrj5nbxoyjjni0n5prghu5nbtdt), and place them into the currently empty data folder.
+Download the [data from Box](https://upenn.box.com/s/p9jkwsrj5nbxoyjjni0n5prghu5nbtdt), and place them into the [currently empty data folder](https://github.com/jlakkis/CarDEC_Codes/tree/main/Data).
 
 ## Install all necessary packages
 
-The user will need to install multiple packages: anaconda, 2 conda environments containing many dependencies, and a version of R > 4.0
+The user will need to install multiple packages: anaconda, two conda environments containing many dependencies, and a version of R >= 4.0
 
 ### Install Anaconda
 
@@ -53,7 +53,7 @@ Lastly, install a [version of R](https://www.r-project.org/). It is highly recom
 
 ## Run all evaluations
 
-Next, it is recommended that the user run all of the valuation notebooks. The user should activate either the cardec or cardec_alternatives environment before opening jupyter to run the python notebooks. This is necessary because these two environments have "nb_conda_kernels" installed, which will allow the user to switch anaconda environments in the jupyter app. The following command will activate the cardec environment.
+Next, it is recommended that the user run all of the evaluation notebooks. The user should activate either the cardec or cardec_alternatives environment before opening jupyter to run the python notebooks. This is necessary because these two environments have "nb_conda_kernels" installed, which will allow the user to switch anaconda environments in the jupyter app. The following command will activate the cardec environment.
 
 ```
 $ conda activate cardec
@@ -100,7 +100,7 @@ In the next step, the user should run the python notebooks to evaluate all metho
 
 1. [Competing Methods Macaque.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/Competing%20Methods%20Macaque.ipynb)
 2. [Competing Methods Mouse Cortex.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/Competing%20Methods%20Mouse%20Cortex.ipynb)
-3. [Competing Methods Mouse Retina.ipynb] (https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/Competing%20Methods%20Mouse%20Retina.ipynb)
+3. [Competing Methods Mouse Retina.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/Competing%20Methods%20Mouse%20Retina.ipynb)
 4. [Competing Methods PBMC.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/Competing%20Methods%20PBMC.ipynb)
 5. [Competing Methods Pancreas.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/Competing%20Methods%20Pancreas.ipynb)
 6. [DCA Liver Runtime.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/DCA%20Liver%20Runtime.ipynb)
@@ -117,8 +117,8 @@ Lastly, the user should run the python notebooks used to generate the coefficien
 4. [Batch Calibration Tests PBMC.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20CarDEC/Batch%20Calibration%20Tests%20PBMC.ipynb)
 5. [Batch Calibration Tests Pancreas.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20CarDEC/Batch%20Calibration%20Tests%20Pancreas.ipynb)
 
-## Run Rscripts to generate final figures
+## Run Rscripts to Generate Final Plots
 
-This last step is purely optional. In the previous steps, all analysis was completed. This final step involves using Rscripts to generate final figures. These Rscripts do not perform any actual analysis, they are simply used in order to generate prettier plots than Python for the paper. For example, all UMap plots in the paper were genrated by running all analysis in Python, exporting the computed UMAP coordinates to a csv file, and then reading this csv into R to build a prettier UMAP plot using ggplot2.
+This last step is purely optional. In the previous steps, all analysis was completed. This final step involves using Rscripts to generate final figures. These Rscripts do not perform any actual analysis, they are simply used in order to generate prettier plots than Python for the paper. For example, all UMAP plots in the paper were generated by running all analysis in Python, exporting the computed UMAP coordinates to a csv file, and then reading this csv into R to build a prettier UMAP plot using ggplot2.
 
 If the user wishes to generate the final plots, they just need to open each folder and run any Rscripts they find. These Rscripts should run in under 30 seconds each since they just read in small csv files and generate UMAP plots. The scripts have names like "figure_make.R", "figure_make_HVGo.R", "figure_make_bybatch.R", etcetra. A few figure folders will not contain Rscripts, which means that no R postprocessing was done to generate final figures.
