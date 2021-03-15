@@ -26,7 +26,7 @@ Clone this repository to your local machine using [the standard procedure](https
 
 ## Download the data from Box
 
-Download the [data from Box](https://upenn.box.com/s/p9jkwsrj5nbxoyjjni0n5prghu5nbtdt), and place them into the [currently empty data folder](https://github.com/jlakkis/CarDEC_Codes/tree/main/Data).
+Download the [data from Box](https://upenn.box.com/s/xlwg9e0vtj8a0xq6l87f2knwquclpjaw), and place them into the [currently empty data folder](https://github.com/jlakkis/CarDEC_Codes/tree/main/Data).
 
 ## Install all necessary packages
 
