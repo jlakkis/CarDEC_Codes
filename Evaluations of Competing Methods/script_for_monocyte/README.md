@@ -11,7 +11,7 @@ The following five files gives how to run CarDEC and competing methods on monocy
 
 1. [CarDEC_monocyte.ipynb](./CarDEC_monocyte.ipynb) 
 2. [dca+combat_monocyte.ipynb](dca+combat_monocyte.ipynb)
-3. [MNN_monocyte_new.R](MNN_monocyte_new.R)
+3. [MNN_monocyte.R](MNN_monocyte.R)
 4. [scanorama_monocyte.ipynb](scanorama_monocyte.ipynb)
 5. [scVI_monocyte.ipynb](scVI_monocyte.ipynb)
 
