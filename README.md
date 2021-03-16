@@ -77,7 +77,7 @@ It is recommended that the user first run the CarDEC notebook. Simply, open each
 6. [CarDEC Liver Runtime.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20CarDEC/CarDEC%20Liver%20Runtime.ipynb)
 7. [CarDEC Mouse Cortex-SCT.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20CarDEC/CarDEC%20Mouse%20Cortex-SCT.ipynb)
 8. [CarDEC Pancreas Revisions.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20CarDEC/CarDEC%20Pancreas%20Revisions.ipynb)
-9. [CarDEC_monocyte.ipynb](Evaluations of Competing Methods/script_for_monocyte/CarDEC_monocyte.ipynb)
+9. [CarDEC_monocyte.ipynb](./Evaluations of Competing Methods/script_for_monocyte/CarDEC_monocyte.ipynb)
 
 ### Run MNN R Scripts
 
@@ -94,7 +94,7 @@ Next, it is recommended that the user run all scripts to evaluate MNN. For each 
 9. [MNN_Retina_HVG.R](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/MNN_Retina_HVG.R)
 10. [MNN_sampleMacaque.R](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/MNN_sampleMacaque.R)
 11. [MNN_sampleMacaque_HVG.R](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/MNN_sampleMacaque_HVG.R)
-12. [MNN_monocyte.R](Evaluations of Competing Methods/script_for_monocyte/MNN_monocyte.R)
+12. [MNN_monocyte.R](./Evaluations of Competing Methods/script_for_monocyte/MNN_monocyte.R)
 
 
 ### Run Other Method Python Notebooks
@@ -106,7 +106,7 @@ In the next step, the user should run the python notebooks to evaluate all metho
 3. [Competing Methods Mouse Retina.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/Competing%20Methods%20Mouse%20Retina.ipynb)
 4. [Competing Methods PBMC.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/Competing%20Methods%20PBMC.ipynb)
 5. [Competing Methods Pancreas.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/Competing%20Methods%20Pancreas.ipynb)
-6. [Competing Methods for monocyte](Evaluations of Competing Methods/script_for_monocyte/README.md) 
+6. [Competing Methods for monocyte](./Evaluations of Competing Methods/script_for_monocyte) 
 7. [DCA Liver Runtime.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/DCA%20Liver%20Runtime.ipynb)
 8. [Scanorama Liver Runtime.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/Scanorama%20Liver%20Runtime.ipynb)
 8. [scVI Liver Runtime.ipynb](https://github.com/jlakkis/CarDEC_Codes/blob/main/Evaluations%20of%20Competing%20Methods/scVI%20Liver%20Runtime.ipynb)
