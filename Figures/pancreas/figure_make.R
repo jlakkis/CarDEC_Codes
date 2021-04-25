@@ -135,9 +135,9 @@ ARIs$Method = as.factor(ARIs$Method)
 myplot <- ggplot(data = ARIs)
 myplot <- myplot + geom_bar(aes(Method, Score, fill = Metric), stat="identity", position=position_dodge()) + 
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        panel.background = element_blank(), axis.line = element_line(colour = "black"))
-myplot = myplot + scale_fill_brewer(palette="Pastel2") + theme(text = element_text(size = 10)) + ggtitle('Clustering Accuracy with Embedding')
-myplot = myplot + theme(plot.title = element_text(size=12)) + theme(plot.title = element_text(hjust=0.5))
+        panel.background = element_blank(), axis.line = element_line(colour = "black"), axis.title.x=element_blank())
+myplot = myplot + scale_fill_brewer(palette="Pastel2") + theme(text = element_text(size = 13)) + ggtitle('Clustering Accuracy with Embedding')
+myplot = myplot + theme(plot.title = element_text(size=14)) + theme(plot.title = element_text(hjust=0.5))
 myplot
 
 ggsave('embeddingplot.tiff', height = 3.65, width = 6.35, units = "in", myplot, dpi = 300)
